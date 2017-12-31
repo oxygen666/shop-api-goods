@@ -3,20 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <!--test -->
     <groupId>cn.wolfcode</groupId>
     <artifactId>shop-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>../shop-client-mgrsite</module>
-        <module>../shop-client-website</module>
-        <module>../shop-server-goods</module>
-        <module>../shop-server-order</module>
-        <module>../shop-api-order</module>
+
         <module>../shop-api-goods</module>
     </modules>
 
+
+    <!--test change-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -31,17 +29,7 @@
 
     <dependencies>
 
-        <!--依赖两个api-->
-        <dependency>
-            <groupId>cn.wolfcode</groupId>
-            <artifactId>shop-api-goods</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.wolfcode</groupId>
-            <artifactId>shop-api-order</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
         <!--springboot启动包-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
